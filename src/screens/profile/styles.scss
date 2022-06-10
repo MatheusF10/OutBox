@@ -1,0 +1,139 @@
+.profileContainer {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-content: start;
+  justify-content: center;
+
+  .profileContent {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #e3e3e3;
+    width: 20%;
+    position: fixed;
+
+    .buttonContent {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 10rem;
+
+      .markbook {
+        width: 150px;
+        height: 55px;
+        background: #5cb0bb;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        font-family: 'Open-Sans' sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        margin-bottom: 2rem;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+      }
+
+      .markbook:hover {
+        filter: brightness(90%);
+      }
+
+      a {
+        color: #702ba6;
+        font-size: 15px;
+        font-weight: 700;
+        font: bold;
+      }
+    }
+
+    .profileConfig {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      a {
+        color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 1rem;
+        font-family: 'Open-sans' sans-serif;
+        font-weight: 600;
+        font: bold;
+      }
+
+      a:hover {
+        color: rgb(96, 96, 96);
+      }
+
+      .circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #c4c4c4;
+        width: 40px;
+        height: 40px;
+      }
+
+      .circle:hover {
+        filter: brightness(90%);
+      }
+    }
+  }
+
+  .profilePosts {
+    align-self: start;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2.5rem;
+    box-sizing: border-box;
+
+    .input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      height: 200px;
+      border: none;
+      background-color: white;
+      border-radius: 20px;
+      font-family: 'Open-sans', sans-serif;
+      color: black;
+      font-size: 20px;
+      resize: none;
+      margin-bottom: 2rem;
+      padding: 15px;
+    }
+
+    .plusButton {
+      align-self: flex-end;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      width: 70px;
+      height: 50px;
+      background: #702ba6;
+      color: white;
+      border-radius: 30px;
+      margin-right: 10%;
+    }
+
+    .plusButton:hover {
+      filter: brightness(90%);
+    }
+  }
+
+  .cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+  }
+}
